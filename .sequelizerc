@@ -1,0 +1,9 @@
+//é necessário mudar a configuração para o sequelize ter sintaxe de js, deve-se usar: ctr shift p,change language mode, e por fim escolher javascript
+const {resolve} = require('path')
+module.exports = {
+  config: resolve(__dirname, 'src', 'config', 'database.js'),
+  'models-path': resolve(__dirname, 'src', 'models'),
+  //a pasta migrations e seeds são criadas automaticamente
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'),
+  'seeders-path': resolve(__dirname, 'src', 'database', 'seeds')
+}
