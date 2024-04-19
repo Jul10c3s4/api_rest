@@ -7,7 +7,7 @@ const router = new Router();
 // router.get('/', loginRequired, userController.index);// lista usuários, oq não é legal em uma api
 // router.get('/:id', userController.show);// lista um usuário, oq não é legal em uma api
 
-router.post('/', loginRequired, userController.store);
+router.post('/', userController.store);
 router.put('/', loginRequired, userController.update);
 router.delete('/', loginRequired, userController.delete);
 export default router;
